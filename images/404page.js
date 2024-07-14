@@ -1,5 +1,5 @@
 var h3 = document.getElementById("h1");
-element.innerHTML = "Файл не найден";
+h3.innerHTML = "Файл не найден";
 var p1 = document.getElementById("p1");
 p1.innerHTML = "Упс! Этого файла не существует!";
 var p2 = document.getElementById("p2");
