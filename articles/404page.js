@@ -1,3 +1,4 @@
+document.title = "Статья не найдена - Про Компы";
 var h3 = document.getElementById("h1");
 h3.innerHTML = "Статья не найдена";
 var p1 = document.getElementById("p1");
