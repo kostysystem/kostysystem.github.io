@@ -47,7 +47,7 @@ background: rgba(255,255,255,.8);
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  background-color: #018281;
+  background-color: #f0f0f2;
   background-size: 10px 10px;
   font-family: 'Arial';
 }
@@ -134,11 +134,11 @@ border-color: #6d6d6d;
   font-family: sans-serif;
  
 }
+.content {
+        background: url('https://craftbiped.github.io/images/fon.png');
+border-color: #6d6d6d;
+    }
 .copyright {
- position: fixed; //fixed is absolute to a browser
- bottom: 0;
- left: 0;
- right: 0;
  color: white;
  background-color: #323339;
  height: 300
