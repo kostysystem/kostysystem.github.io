@@ -3,156 +3,80 @@
 <head>
 <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="https://sys106.github.io/sys106media/img/logo.ico">
 <link rel="stylesheet" type="text/css" href="https://sys106.github.io/styles.css" />
-</head>
-<body>
-</div>
-</nav>
-<div id="menu" class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">❌ System106 - ошибка</h3>
-        <a href="https://sys106.github.io/" title="Закрыть" class="close">×</a>
-      </div>
-      <div class="modal-body">    
-<h1>❌  System106</h1>
-<h3 id="h1">Страница не найдена</h3>
-<hr>
-<p id="p1">Упс! Этой страницы не существует!</p>
-<p id="p2">Возможно URL этой страницы указан неверно! Проверьте правильность URL-адреса или перейдите на главную.</p>
-<br>
-<h3><a href="https://sys106.github.io/">Перейти на главную</a>
-<br>
-<hr>
-<center>
-<h3>© SYSTEM106, 2024</h3>
-</center>
-      </div>
-    </div>
-  </div>
-</div>
-
-
- 
-<!-- CSS-стили модального окна -->
 <style>
-/* Стили всплывающего окна по-умолчанию */
-.modal {
-    position: fixed; /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    opacity: 1; /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in; 
-    -moz-transition: opacity 200ms ease-in;
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: auto; /* элемент невидим для событий мыши */
-
-    overflow-y: auto;
-}
-/* При отображении модального окно */
-.modal:target {
-    opacity: 1; /* делаем окно видимым */
-   pointer-events: auto; /* элемент видим для событий мыши */
-    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-}
-@media (min-width: 576px) {
-  .modal-dialog {
-      max-width: 500px;
-      margin: 30px auto; /* отображение окна по центру */
-  }
-}
-/* Стили для блока с контентом окна */ 
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    outline: 0;
-}
-@media (min-width: 768px) {
-  .modal-content {
-      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  }
-}
-/* Стили заголовка окна */
-.modal-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
-.modal-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: black;
-}
-/* Стили кнопки "х" ("Закрыть")  */
-.close {
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #000;
-    opacity: .5;
-    text-decoration: none;
-    color: red;
-}
-/* Стили для закрывающей кнопки в фокусе или наведении */
-.close:focus, .close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .75;
-}
-/* Стили блока основного содержимого окна */
-.modal-body {
-  position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 15px;
-    overflow: auto;
+.errurl {
+color: #FF0000
 }
 </style>
-<script src="404page.js"></script>
+</head>
+<body>
+<script src="https://sys106.github.io/sys106media/404script.js">sendAlert()</script>
+<div class="zakrep">
+<nav>  
+   <ul class="topmenu">
+    <li><h2> <img src="https://sys106.github.io/sys106media/img/logo.ico" width="40px" height="40px" align="center"> System106</h2></li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li><a href="https://sys106.github.io/index.html">Главная</a></li>
+    <li><a href="https://sys106.github.io/newbie/index.html">Для новичков</a></li>
+    <li><a href="https://sys106.github.io/articles/index.html">System106 - статьи</a></li>
+    <li><a href="https://sys106.github.io/blog/index.html">Блог</a></li>
+  </ul>
+        <div class="menu">
+<br>
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
+    <ul class="menu-list">
+<br><br>
+<center>
+            <li><img src="https://sys106.github.io/sys106media/img/logo.ico" width="40px" height="40px" align="center"></li>
+            <li><h3>System106</h3></li>
+</center>
+            <li><a class="menu-item" href="https://sys106.github.io/index.html">Главная</a></li>
+            <li><a class="menu-item" href="https://sys106.github.io/newbie/index.html">Для новичков</a></li>
+            <li><a class="menu-item" href="https://sys106.github.io/articles/index.html">System106 - статьи</a></li>
+            <li><a class="menu-item" href="https://sys106.github.io/blog/index.html">Блог</a></li>
+       </ul>
+<br>
+</div>
+</div>
+</nav>
+<center>
+<br>
+<img src="https://sys106.github.io/sys106media/img/logo.ico" width="70" height="70">
+<h1>System106</h1>
+<h3>404</h3>
+<hr>
+<br>
+<h3>Упс! Мы искали.... искали.... но так и не нашли <span id="page404"></span><a class="errurl" href="#404" onclick="sendAlert()"><span id="currentURL">эту страницу</span></a>!</h3>
+<br>
+<h4>Наш сайт работает. Не переживайте! Просто вы зашли на страницу, которой никогда не было или она была, но её удалили навсегда.</h4>
+<h4>Проверьте правильность URL-адреса или отправьтесь на главную</h4>
+<br>
+<br>
+<h1><a href="https://sys106.github.io">На главную</a></h1>
+<br><br><br>
+<h5>КОД ОШИБКИ: 404</h5>
+<br><br>
+</center>
+<div class="copyright">
+<center>
+<br><br>
+<h2>System106</h2>
+<h5>© SYSTEM106, 2024</h5>
+<br>
+</center>
+</div>
 </body>
+<script>
+var currentURL = window.location.href;
+console.log(currentURL);
+document.getElementById("currentURL").innerHTML = currentURL;
+document.getElementById("page404").innerHTML = "страницу ";
+</script>
 </html>
