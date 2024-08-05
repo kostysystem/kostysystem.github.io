@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /goto/
+Disallow: /sys106media/
+Disallow: /siteinfo.html
+Disallow: /styles.css
+Disallow: /favicon.ico
+Disallow: /404.html
