@@ -48,7 +48,7 @@ color: #FF0000
 </nav>
 <center>
 <br>
-<h3>Вы уверены, что хотите перейти по URL <a><span id="URL">Не определено</span></a>?</h3>
+<h3>Вы уверены что хотите перейти по URL <a><span id="URL">Не определено</span></a>?</h3>
 <br>
 <h4>Мы никак не регулируем содержимое данной страницы, а значит там может находится что угодно.</h4>
 <h4>Вы уверены, что хотите продолжить?</h4>
@@ -60,9 +60,13 @@ color: #FF0000
 </center>
 </body>
 <script>
+if(window.location.hash) {
 var URL = window.location.hash.substring(1);
 console.log(URL);
 document.getElementById("URL").innerHTML = URL;
 document.getElementById("gotourl").innerHTML = "<a href=\""+ URL +"\">ПРОДОЛЖИТЬ ПЕРЕХОД</a>";
+} else {
+window.location.href = '../index.html';
+}
 </script>
 </html>
