@@ -1,6 +1,6 @@
 User-Agent: *
 Disallow: /goto/
-Disallow: /sys106media/
+Disallow: /images/
 Disallow: /siteinfo.html
 Disallow: /styles.css
 Disallow: /favicon.ico
