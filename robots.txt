@@ -5,4 +5,3 @@ Disallow: /siteinfo.html
 Disallow: /styles.css
 Disallow: /favicon.ico
 Disallow: /404.html
-Disallow: /sj
