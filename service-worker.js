@@ -2,8 +2,6 @@ let ressource = [
   '/offline/offline-landing.html',
   '/offline/styles.css',
   '/offline/favicon.ico',
-  'https://kostysystem.github.io/styles.css'
-  'https://kostysystem.github.io/favicon.ico'
 ];
 
 const CACHENAME = 'offline landing';
