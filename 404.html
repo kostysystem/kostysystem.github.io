@@ -12,19 +12,20 @@ color: #FF0000
 </style>
 </head>
 <body>
+<div id="menu">
 <div class="zakrep">
 <nav>  
    <ul class="topmenu">
-    <li><h2> <img src="favicon.ico" width="40px" height="40px" align="center"> KostySystem</h2></li>
+    <li> <h2> KostySystem</h2></li>
     <li> </li>
     <li> </li>
     <li> </li>
     <li> </li>
     <li> </li>
-    <li><a href="https://kostysystem.github.io/index.html">Главная</a></li>
-    <li><a href="https://kostysystem.github.io/newbie/index.html">Для новичков</a></li>
-    <li><a href="https://kostysystem.github.io/articles/index.html">KostySystem - статьи</a></li>
-    <li><a href="https://kostysystem.github.io/blog/index.html">Блог</a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="newbie/index.html">Для новичков</a></li>
+    <li><a href="articles/index.html">KostySystem - статьи</a></li>
+    <li><a href="blog/index.html">Блог</a></li>
   </ul>
         <div class="menu">
 <br>
@@ -33,18 +34,18 @@ color: #FF0000
     <ul class="menu-list">
 <br><br>
 <center>
-            <li><img src="favicon.ico" width="40px" height="40px" align="center"></li>
             <li><h3>KostySystem</h3></li>
 </center>
-            <li><a class="menu-item" href="https://kostysystem.github.io/index.html">Главная</a></li>
-            <li><a class="menu-item" href="https://kostysystem.github.io/newbie/index.html">Для новичков</a></li>
-            <li><a class="menu-item" href="https://kostysystem.github.io/articles/index.html">KostySystem - статьи</a></li>
-            <li><a class="menu-item" href="https://kostysystem.github.io/blog/index.html">Блог</a></li>
+            <li><a class="menu-item" href="index.html">Главная</a></li>
+            <li><a class="menu-item" href="newbie/index.html">Для новичков</a></li>
+            <li><a class="menu-item" href="articles/index.html">KostySystem - статьи</a></li>
+            <li><a class="menu-item" href="blog/index.html">Блог</a></li>
        </ul>
 <br>
 </div>
 </div>
 </nav>
+</div>
 <center>
 <br>
 <img src="favicon.ico" width="70" height="70">
@@ -63,26 +64,12 @@ color: #FF0000
 <h5>КОД ОШИБКИ: 404</h5>
 <br><br>
 </center>
-<div class="copyright">
-<center>
-<br><br>
-<h2>KostySystem</h2>
-<h5>© KostySystem, 2024</h5>
-<br>
+<div class="copyright" id="copyright">
+<center> <br><br> <h2>KostySystem</h2> <h5>© KostySystem</h5> <br> 
+<p>! JavaScript отключён. Некоторые элементы сайта могут отображаться неправильно.</p>
 </center>
 </div>
-<script>
-  if ('serviceWorker' in navigator) {
-    console.log('SERVWORKER: service worker registration in progress.');
-    navigator.serviceWorker.register('/service-worker.js').then(function () {
-      console.log('SERVWORKER: service worker registration complete.');
-    }, function () {
-      console.log('SERVWORKER: service worker registration failure.');
-    });
-  } else {
-    console.log('SERVWORKER: service worker is not supported.');
-  }
-</script>
+<script src="/elements.js"></script>
 </body>
 <script>
 var currentURL = window.location.href;

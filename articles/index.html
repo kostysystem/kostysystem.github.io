@@ -8,9 +8,11 @@
 <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
+<div id="menu">
+<div class="zakrep">
 <nav>  
    <ul class="topmenu">
-    <li><h2> <img src="favicon.ico" width="40px" height="40px" align="center"> Статьи</h2></li>
+    <li> <h2> KostySystem</h2></li>
     <li> </li>
     <li> </li>
     <li> </li>
@@ -28,8 +30,7 @@
     <ul class="menu-list">
 <br><br>
 <center>
-            <li><img src="favicon.ico" width="40px" height="40px" align="center"></li>
-            <li><h3>Статьи</h3></li>
+            <li><h3>KostySystem</h3></li>
 </center>
             <li><a class="menu-item" href="../index.html">Главная</a></li>
             <li><a class="menu-item" href="../newbie/index.html">Для новичков</a></li>
@@ -38,7 +39,9 @@
        </ul>
 <br>
 </div>
+</div>
 </nav>
+</div>
 <center>
 <br>
 <h1>KostySystem</h1>
@@ -78,25 +81,11 @@
 <br>
 <br><br><br><br><br><br><br><br><br>
 </center>
-<div class="copyright">
-<center>
-<br><br>
-<h2>KostySystem - статьи</h2>
-<h5>© KostySystem, 2024</h5>
-<br>
+<div class="copyright" id="copyright">
+<center> <br><br> <h2>KostySystem</h2> <h5>© KostySystem</h5> <br> 
+<p>! JavaScript отключён. Некоторые элементы сайта могут отображаться неправильно.</p>
 </center>
 </div>
-<script>
-  if ('serviceWorker' in navigator) {
-    console.log('SERVWORKER: service worker registration in progress.');
-    navigator.serviceWorker.register('/service-worker.js').then(function () {
-      console.log('SERVWORKER: service worker registration complete.');
-    }, function () {
-      console.log('SERVWORKER: service worker registration failure.');
-    });
-  } else {
-    console.log('SERVWORKER: service worker is not supported.');
-  }
-</script>
+<script src="/elements.js"></script>
 </body>
 </html>
