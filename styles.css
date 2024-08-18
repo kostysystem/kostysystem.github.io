@@ -253,4 +253,17 @@ display:block;
 display:block;
 }
 }
-
+.computer-show {
+display:block;
+}
+.smartphone-show {
+display:none;
+}
+@media screen and (max-width: 657px) {
+.computer-show {
+display:none;
+}
+.smartphone-show {
+display:block;
+}
+}
