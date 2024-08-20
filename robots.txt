@@ -1,9 +1,9 @@
 User-Agent: *
 Disallow: /goto/
+Disallow: /special/
 Disallow: /images/
 Disallow: /siteinfo.html
 Disallow: /styles.css
 Disallow: /favicon.ico
 Disallow: /404.html
-Disallow: /offline/
 Sitemap: sitemap.xml
