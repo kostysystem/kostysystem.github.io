@@ -8,5 +8,7 @@ content.innerHTML = "<br><hr><br><h2>Отечественное ПО</h2><p>В �
 
     } else {
 var countrycontent = "other"
+var content = document.getElementById("local-content");
+content.innerHTML = "<br>";
     }
 }
