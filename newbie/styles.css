@@ -42,10 +42,6 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
     position: absolute;
 }
 * { box-sizing: border-box; }
-html {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 body {
   margin: 0;
   background-color: #f0f0f2;
@@ -267,7 +263,7 @@ background: rgba(255,255,255,.8);
   font-weight: bold;
 }
 .textphone {
-  display: block;
+  display: inline;
   position: relative;
   top: -48px;
   right: -80px;
@@ -308,7 +304,7 @@ background: rgba(255,255,255,.8);
   display: none;
 }
 .textphone {
-  display: block;
+  display: inline;
   position: relative;
   top: -48px;
   right: -80px;
