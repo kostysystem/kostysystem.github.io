@@ -29,9 +29,6 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
     display: none;
   }
 }
-nav {
-background: rgba(255,255,255,.8);
-}
 #note {
     z-index: 101;
     top: 0;
@@ -45,6 +42,10 @@ background: rgba(255,255,255,.8);
     position: absolute;
 }
 * { box-sizing: border-box; }
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
   margin: 0;
   background-color: #f0f0f2;
@@ -134,10 +135,6 @@ border-color: #6d6d6d;
   font-family: sans-serif;
  
 }
-.content {
-        background: url('https://craftbiped.github.io/images/fon.png');
-border-color: #6d6d6d;
-    }
 .copyright {
  color: white;
  background-color: #323339;
@@ -152,9 +149,15 @@ border-color: #6d6d6d;
 }
 #mc {
 }
+.pcnav {
+background: rgba(255,255,255,.8);
+}
 .ital {
 font-style: italic;
 font-family: 'Arial';
+}
+.bold-mobile {
+  display: none;
 }
 .burger-checkbox {
   display:none;
@@ -172,6 +175,12 @@ font-family: 'Arial';
   background: transparent;
   width: 40px;
   height: 26px;
+}
+.textphone {
+  display: none;
+}
+.textphonemini {
+  display: none;
 }
 .menu {
 display:none;
@@ -251,6 +260,17 @@ display:block;
 }
 .menu {
 display:block;
+background: rgba(255,255,255,.8);
+}
+.bold-mobile {
+  display: inline;
+  font-weight: bold;
+}
+.textphone {
+  display: block;
+  position: relative;
+  top: -48px;
+  right: -80px;
 }
 }
 .computer-show {
@@ -265,5 +285,32 @@ display:none;
 }
 .smartphone-show {
 display:block;
+}
+}
+@media screen and (max-width: 241px) {
+.topmenu {
+display:none;
+}
+.submenu {
+display:none;
+}
+.burger {
+display:block;
+}
+.burger-checkbox {
+display:block;
+}
+.menu {
+display:block;
+background: rgba(255,255,255,.8);
+}
+.bold-mobile {
+  display: none;
+}
+.textphone {
+  display: block;
+  position: relative;
+  top: -48px;
+  right: -80px;
 }
 }
