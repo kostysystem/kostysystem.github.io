@@ -75,8 +75,8 @@ color: #FF0000
 </body>
 <script>
 var currentURL = window.location.href;
-console.log(currentURL);
 document.getElementById("currentURL").innerHTML = currentURL;
 document.getElementById("page404").innerHTML = "страницу ";
+console.error("KOSTYSYSTEM: Не удалось загрузить страницу " + currentURL + ". Сервер вернул \"404 Not Found\"");
 </script>
 </html>
