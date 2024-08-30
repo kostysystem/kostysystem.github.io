@@ -11,6 +11,11 @@ menu.innerHTML = "<div id=\"notewrite\"> </div><div id=\"notewriteerror\"> </div
 // Украшательства
 
 // ==========================
+// Тех-работы
+var tech = "false"
+var prichinazakritia = "Обновление сайта."
+var kogdadostypno = "30.08.2024 в 20:00"
+
 // Надпись сверху страницы
 var note = "false"
 var notetext = "none"
@@ -20,6 +25,19 @@ var type = "normal"
 // normal - обычное объявление
 // ==========================
 
+
+
+
+
+
+
+
+
+
+
+
+
+var url = window.location.pathname
 
     if (note == "true"){
     if (type == "error"){
@@ -35,6 +53,13 @@ copyright.innerHTML = "<div id=\"note\"><br><br><div class=\"notetext\">" + note
     }
 
     } 
+    else {
+
+    }
+    if (tech == "true"){
+document.title = "Технические работы - KostySystem"
+document.body.innerHTML = "<center><br><br><h3>В данный момент наш сайт находится на технический работах.<br><br>Причина временного отключения: " + prichinazakritia + "</h3><br><br><h4>Наш сайт будет доступен примерно " + kogdadostypno + ".<br><br><br><br><h4><a href=\"#\"onclick=\"location.reload (); return false;\">Обновить страницу</a>";
+    }
     else {
 
     }
