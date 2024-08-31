@@ -58,7 +58,7 @@ copyright.innerHTML = "<div id=\"note\"><br><br><div class=\"notetext\">" + note
     }
     if (tech == "true"){
 document.title = "Технические работы - KostySystem"
-document.body.innerHTML = "<center><br><br><h3>В данный момент наш сайт находится на технический работах.<br><br>Причина временного отключения: " + prichinazakritia + "</h3><br><br><h4>Наш сайт будет доступен примерно " + kogdadostypno + ".<br><br><br><br><h4><a href=\"#\"onclick=\"location.reload (); return false;\">Обновить страницу</a>";
+document.body.innerHTML = "<center><br><br><h3>В данный момент наш сайт находится на техническиx работах.<br><br>Причина временного отключения: " + prichinazakritia + "</h3><br><br><h4>Наш сайт будет доступен примерно " + kogdadostypno + ".<br><br><br><br><h4><a href=\"#\"onclick=\"location.reload (); return false;\">Обновить страницу</a>";
     }
     else {
 
