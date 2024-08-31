@@ -1,6 +1,9 @@
 a {
     color: blue;
 }
+.hyberlink {
+    color: white;
+}
 button {
   display: inline-block;
   color: white;
@@ -125,8 +128,11 @@ nav a {
   color: #003559;
   text-transform: uppercase;
 }
+.notetext {
+  text-align: center;
+}
 .down:after {
-  content: "⬇️";
+  content: " ";
   margin-left: 8px;
   font-family: FontAwesome;
 }
