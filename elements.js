@@ -14,11 +14,11 @@ menu.innerHTML = "<div id=\"notewrite\"> </div><div id=\"notewriteerror\"> </div
 // Тех-работы
 var tech = "false"
 var prichinazakritia = "Обновление сайта."
-var kogdadostypno = "30.08.2024 в 20:00"
+var kogdadostypno = "31.08.2024 в 20:00"
 
 // Надпись сверху страницы
-var note = "false"
-var notetext = "none"
+var note = "true"
+var notetext = "Нас ждёт обновление! <a href=\"/blog/2.html\" class=\"hyberlink\">Подробнее</a>"
 
 var type = "normal"
 // error - сообщение о баге, сбое или проблеме.
