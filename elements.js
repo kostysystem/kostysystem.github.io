@@ -12,12 +12,12 @@ menu.innerHTML = "<div id=\"notewrite\"> </div><div id=\"notewriteerror\"> </div
 
 // ==========================
 // Тех-работы
-var tech = "false"
-var prichinazakritia = "Обновление сайта."
-var kogdadostypno = "31.08.2024 в 20:00"
+var tech = "true"
+var prichinazakritia = "Мы работаем над новым обновлением для нашего веб-сайта, в результате чего сайт временно недоступен!"
+var kogdadostypno = "01.09.2024 в 00:00"
 
 // Надпись сверху страницы
-var note = "true"
+var note = "false"
 var notetext = "Нас ждёт обновление! <a href=\"/blog/2.html\" class=\"hyberlink\">Подробнее</a>"
 
 var type = "normal"
