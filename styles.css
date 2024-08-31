@@ -1,8 +1,16 @@
 a {
-    color: blue;
+    color: #000;
 }
 .hyberlink {
     color: white;
+}
+.last {
+background-color: #fbf8f2;
+color: #000;
+}
+.last-razdelitel {
+background-color: #000;
+height: 2px;
 }
 button {
   display: inline-block;
@@ -35,7 +43,7 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
 #note {
     z-index: 101;
     color: white;
-    background: #2f2f2f;
+    background: #313338;
     line-height: 2.5;
     text-align: center;
     line-height: 0.5;
@@ -79,7 +87,7 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
   left: -9px;
   top: 13px;
 }
-.copyright {
+#copyright {
   color: white;
   background-color: #2f2f2f;
   height: 300
@@ -96,7 +104,7 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  background-color: #f0f0f2;
+  background-color: #fbf8f2;
   background-size: 10px 10px;
   font-family: 'Arial';
 }
@@ -113,7 +121,8 @@ nav a {
 }
 .topmenu {
   backface-visibility: hidden;
-  background: rgba(255,255,255,.8);
+  background-color: #2f2f2f;
+  color: #ffffff;
 }
 .topmenu > li {
   display: inline-block;
@@ -125,7 +134,7 @@ nav a {
   line-height: 70px;
   padding: 0 30px;
   font-weight: bold;
-  color: #003559;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .notetext {
@@ -186,11 +195,6 @@ border-color: #6d6d6d;
   font-family: sans-serif;
  
 }
-.copyright {
- color: white;
- background-color: #323339;
- height: 300
-}
 .opencon {
   color: #1DE81C;
 }
@@ -245,11 +249,11 @@ display:none;
   width: 100%;
   height: 4px;
   border-radius: 10px;
-  background: #000;
+  background: #fff;
 }
 .burger::before {
   top: 0;
-  box-shadow: 0 11px 0 #000;
+  box-shadow: 0 11px 0 #fff;
   transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
 }
 .burger::after {
@@ -276,7 +280,7 @@ display:none;
   padding: 42px 0;
   margin: 0;
   font-family: 'Kurale', serif;
-  background: white;
+  background: #2f2f2f;
   list-style-type: none;
   transform: translateX(-100%);
   transition: .3s;
@@ -285,7 +289,7 @@ display:none;
 .menu-item {
   display: block;
   padding: 8px;
-  color: #003559;
+  color: #fff;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
@@ -311,11 +315,13 @@ display:block;
 }
 .menu {
 display:block;
-background: rgba(255,255,255,.8);
+background-color: #2f2f2f;
+color: #ffffff;
 }
 .bold-mobile {
   display: inline;
   font-weight: bold;
+  color: #ffffff;
 }
 .textphone {
   display: inline;
@@ -353,7 +359,8 @@ display:block;
 }
 .menu {
 display:block;
-background: rgba(255,255,255,.8);
+background-color: #2f2f2f;
+color: #ffffff;
 }
 .bold-mobile {
   display: none;
