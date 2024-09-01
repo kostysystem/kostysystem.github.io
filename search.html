@@ -72,9 +72,11 @@ input[type="text"] {
 <hr>
 <br>
   <input type="text" id="elastic" placeholder="Поиск по сайту"/>
+ <div id="kak">
 <p>Результаты по вашему запросу ищутся автоматически. Никуда кликать не нужно.</p>
 <br><br><br>
 <br>
+   </div>
 <div id="fnd"><br></div>
 <div class="zaprosi">
         <div class="card">
@@ -373,6 +375,8 @@ input[type="text"] {
                 if (value === '') {
                     elasticItems.forEach((el) => {
                         el.classList.add('hide')
+                     var kak = document.getElementById("kak");
+                     kak.innerHTML = "<p>Результаты по вашему запросу ищутся автоматически. Никуда кликать не нужно.</p><br><br><br><br>";
                     })
                     return
                 }
@@ -385,10 +389,14 @@ input[type="text"] {
                         el.classList.add('hide')
 var fnd = document.getElementById("fnd");
 fnd.innerHTML = "<style> .zaprosi {display: block;} </style>";
+var kak = document.getElementById("kak");
+kak.innerHTML = " ";
                     } else {
                         el.classList.remove('hide')
 var fnd = document.getElementById("fnd");
 fnd.innerHTML = "<style> .zaprosi {display: block;} </style>";
+var kak = document.getElementById("kak");
+kak.innerHTML = " ";
                     }
                 })
             })
