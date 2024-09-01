@@ -108,6 +108,16 @@ body {
   background-size: 10px 10px;
   font-family: 'Arial';
 }
+.search-button {
+  display: inline-block;
+  float: right;
+  position: relative;
+  right: 10px;
+  top: -73px;
+}
+.search-link {
+  text-decoration: none;
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -329,6 +339,10 @@ color: #ffffff;
   top: -48px;
   right: -80px;
 }
+.search-button {
+  right: 10px;
+  top: -99px;
+}
 }
 .computer-show {
 display:block;
@@ -344,7 +358,7 @@ display:none;
 display:block;
 }
 }
-@media screen and (max-width: 241px) {
+@media screen and (max-width: 268px) {
 .topmenu {
 display:none;
 }
