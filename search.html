@@ -71,14 +71,20 @@ input[type="text"] {
 <h3>Начните вводить то, что вы хотите найти.</h3>
 <hr>
 <br>
-  <input type="text" id="elastic" placeholder="Поиск по сайту"/>
- <div id="kak">
+  <input type="text" id="elastic" placeholder="Поиск по сайту" onkeydown="search()"/>
+  <script>
+function search() {
+    if(event.keyCode == 13) {
+        location.hash = '#';
+        location.hash = 'results';
+    }
+}
+  </script>
 <p>Результаты по вашему запросу ищутся автоматически. Никуда кликать не нужно.</p>
 <br><br><br>
 <br>
-   </div>
 <div id="fnd"><br></div>
-<div class="zaprosi">
+<div class="zaprosi" id="results">
         <div class="card">
 <br>
 <br>
@@ -375,8 +381,6 @@ input[type="text"] {
                 if (value === '') {
                     elasticItems.forEach((el) => {
                         el.classList.add('hide')
-                     var kak = document.getElementById("kak");
-                     kak.innerHTML = "<p>Результаты по вашему запросу ищутся автоматически. Никуда кликать не нужно.</p><br><br><br><br>";
                     })
                     return
                 }
@@ -389,14 +393,10 @@ input[type="text"] {
                         el.classList.add('hide')
 var fnd = document.getElementById("fnd");
 fnd.innerHTML = "<style> .zaprosi {display: block;} </style>";
-var kak = document.getElementById("kak");
-kak.innerHTML = " ";
                     } else {
                         el.classList.remove('hide')
 var fnd = document.getElementById("fnd");
 fnd.innerHTML = "<style> .zaprosi {display: block;} </style>";
-var kak = document.getElementById("kak");
-kak.innerHTML = " ";
                     }
                 })
             })
