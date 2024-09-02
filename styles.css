@@ -208,19 +208,28 @@ border-color: #6d6d6d;
 .opencon {
   color: #1DE81C;
 }
-#indbgs  {
-height: 300
-border-color: #6d6d6d;
-}
-#mc {
-}
 .pcnav {
 background: rgba(255,255,255,.8);
 }
-.ital {
+
+
+.italic {
 font-style: italic;
-font-family: 'Arial';
 }
+.bold {
+font-style: bold;
+}
+.uluned {
+  text-decoration: underline;
+}
+.croout {
+  text-decoration: line-through;
+}
+.hash {
+  display: none;
+}
+
+
 .bold-mobile {
   display: none;
 }
@@ -341,7 +350,7 @@ color: #ffffff;
 }
 .search-button {
   right: 10px;
-  top: -100px;
+  top: -99px;
 }
 }
 .computer-show {
