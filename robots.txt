@@ -6,4 +6,4 @@ Disallow: /siteinfo.html
 Disallow: /styles.css
 Disallow: /favicon.ico
 Disallow: /404.html
-Sitemap: sitemap.xml
+Disallow: /search.html
