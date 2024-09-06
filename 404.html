@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Потерялась страничка - KostySystem</title>
   <link rel="icon" href="/favicon.ico">
 <div id="styles">
 <link rel="stylesheet" type="text/css" href="/styles.css" />
 </div>
 <style>
-.errurl {
-color: #FF0000
+.nydetcya-kogda-nibyd {
+color: gray;
 }
 </style>
 </head>
@@ -50,20 +51,21 @@ color: #FF0000
 </div>
 <center>
 <br>
-<img src="/favicon.ico" width="70" height="70">
+<img src="/images/404image.png" width="70" height="70">
 <h1>KostySystem</h1>
-<h3>404</h3>
+<h2>Страница потеряна :(</h2>
 <hr>
 <br>
-<h3>Упс! Мы искали.... искали.... но так и не нашли <span id="page404"></span><a class="errurl" href="#"><span id="currentURL">эту страницу</span></a>!</h3>
+<h2>Эта страничка потерялась, увы.</h2>
+<h3>Это не значит, что стоит отчаиваться! У нас есть куча других страничек!</h3>
 <br>
-<h4>Наш сайт работает. Не переживайте! Просто вы зашли на страницу, которой никогда не было или она была, но её удалили навсегда.</h4>
-<h4>Проверьте правильность URL-адреса или отправьтесь на главную</h4>
+<p><b>Вы можете перейти на главную или найти другую страничку в поиске!</b></p>
 <br>
 <br>
-<h1><a href="https://kostysystem.github.io">На главную</a></h1>
+<h1><a href="/">Перейти на главную</a></h1>
+<h1><a href="/search.html">Найти другую страничку</a></h1>
 <br><br><br>
-<h5>КОД ОШИБКИ: 404</h5>
+<h4 class="nydetcya-kogda-nibyd">А эта страничка, возможно, когда-нибудь и найдётся!</h4>
 <br><br>
 </center>
 <div class="copyright" id="copyright">
@@ -73,10 +75,4 @@ color: #FF0000
 </div>
 <script src="/elements.js"></script>
 </body>
-<script>
-var currentURL = window.location.href;
-document.getElementById("currentURL").innerHTML = currentURL;
-document.getElementById("page404").innerHTML = "страницу ";
-console.error("KOSTYSYSTEM: Не удалось загрузить страницу " + currentURL + ". Сервер вернул \"404 Not Found\"");
-</script>
 </html>
