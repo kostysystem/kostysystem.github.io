@@ -113,14 +113,14 @@ display: inline-block;
 float: right;
 position: relative;
 right: 10px;
-top: -73px;
+top: -74px;
 }
 .theme-pereklychatel {
   display: inline-block;
   float: right;
   position: relative;
   right: 21px;
-  top: -73px;
+  top: -74px;
   }
 .search-link {
 text-decoration: none;
@@ -359,13 +359,13 @@ top: -48px;
 right: -80px;
 }
 .search-button {
-right: 10px;
-top: -99px;
-}
-.theme-pereklychatel {
-  right: 21px;
-  top: -99px;
-}
+  right: 10px;
+  top: -102px;
+  }
+  .theme-pereklychatel {
+    right: 21px;
+    top: -102px;
+  }
 }
 .computer-show {
 display:block;
