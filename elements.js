@@ -29,7 +29,40 @@ var type = "normal"
 
 
 
-
+function help() {
+    console.log("Список доступных команд:")
+    console.log("switchTheme() - сменить тему")
+    console.log("reload() - перезагрузить страницу")
+    console.log("alert(\"Текст\") - отобразить уведомление")
+    console.log("status() - отобразить статус текущей страницы")
+    console.log("newbie() - раздел \"Для новичков\"")
+    console.log("articles() - раздел \"Статьи\"")
+    console.log("blog() - Блог KostySystem")
+    console.log("И это не всё... Есть ещё системные команды. Их оооооооочень много!")
+}
+function reload() {
+    console.log("Перезагружаем...")
+    window.location.reload()
+}
+function newbie() {
+    window.location.pathname = "/newbie/"
+}
+function articles() {
+    window.location.pathname = "/articles/"
+}
+function blog() {
+    window.location.pathname = "/blog/"
+}
+function status() {
+console.log(" ")
+console.log("Статус текущей веб-страницы:")
+console.log("Host: " + window.location.host + "")
+console.log("Path: " + window.location.pathname + "")
+console.log("Protocol: " + window.location.protocol + "")
+console.log("Hash: " + window.location.hash + "")
+console.log("URL: " + window.location.href + "")
+console.log(" ")
+}
 
 let isDark = false;
 
@@ -92,3 +125,20 @@ document.body.innerHTML = "<center><br><br><h3>В данный момент на
     else {
 
     }
+console.log("K  K  SSSSSSS")
+console.log("K K   S                         KostySystem")
+console.log("KK    SSSSSSS")
+console.log("K K         S               Сайт про компьютеры!")
+console.log("K  K  SSSSSSS")
+console.log(" ")
+console.log("Добро пожаловать в консоль сайта! Она необходима для тестирования возможностей сайта и не только. Не подходит для обычных пользователей.")
+console.log(" ")
+console.log("Статус текущей веб-страницы:")
+console.log("Host: " + window.location.host + "")
+console.log("Path: " + window.location.pathname + "")
+console.log("Protocol: " + window.location.protocol + "")
+console.log("Hash: " + window.location.hash + "")
+console.log("URL: " + window.location.href + "")
+console.log(" ")
+console.log("Введите help(), чтобы получить список команд.")
+
