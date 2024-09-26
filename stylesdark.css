@@ -5,7 +5,7 @@
     bottom: 0;
     left: 0;
     z-index: 1050;
-    background-color: #fbf8f2;
+    background-color: #00a89b;
     opacity: 0; /* по умолчанию модальное окно прозрачно */
     -webkit-transition: opacity 200ms ease-in; 
     -moz-transition: opacity 200ms ease-in;
