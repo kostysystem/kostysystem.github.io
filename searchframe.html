@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KostySystem Search</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 <div id="searchresults">
@@ -46,6 +47,13 @@ function search() {
     }
 }
   </script>
+<script>
+$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+parent.sexit();
+    }
+});
+</script>
 <p>Результаты по вашему запросу ищутся автоматически. Никуда кликать не нужно.</p>
 <br><br><br>
 <br>
