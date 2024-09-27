@@ -91,7 +91,7 @@ console.log(" ")
 
 $(document).keydown(function(e) {
     if (e.keyCode == 27) {
-window.location.hash = "#";
+window.location.hash = "#exit";
 sfrreload();
     }
 });
