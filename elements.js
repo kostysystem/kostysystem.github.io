@@ -50,7 +50,7 @@ var searchwindow = document.getElementById("searchwindow");
 searchwindow.innerHTML = "<div id=\"search\" class=\"modal\">  <div class=\"modal-dialog\">    <div class=\"modal-content\">      <div class=\"modal-header\">        <h3 class=\"modal-title\">Искать в KostySystem</h3>        <a href=\"#exit\" onclick=\"sfrreload()\" title=\"Закрыть поиск\" class=\"close\">×</a>      </div>      <div class=\"modal-body\">            <iframe src=\"/searchframe.html\" height=\"640\"  width=\"100%\"  frameBorder=\"0\" id=\"searchcontent\"></iframe><br><br><br><br></center></div>     </div>    </div>  </div></div>";
 function sfrreload() {
 $('#searchcontent')[0].contentWindow.location.reload(true);
-window.scrollTo(xCoord, yCoord);
+window.scrollTo(0, 0);
 }
 
 
