@@ -159,6 +159,9 @@ document.body.innerHTML = "<center><br><br><h3>В данный момент на
     else {
 
     }
+    if (window.location.host == "kostysystem.github.io."){
+window.location.host = "kostysystem.github.io";
+    }
 console.log("K  K  SSSSSSS")
 console.log("K K   S                         KostySystem")
 console.log("KK    SSSSSSS")
