@@ -44,14 +44,17 @@ $("a:not([href*=javascript]):not([href*=\\#]):not(.fancybox):not([target]):not([
 });
 
 
-
+const delay = (delayInms) => {
+  return new Promise(resolve => setTimeout(resolve, delayInms));
+};
 $('body').append('<div id="searchwindow"></div>');
 var searchwindow = document.getElementById("searchwindow");
 searchwindow.innerHTML = "<div id=\"search\" class=\"modal\">  <div class=\"modal-dialog\">    <div class=\"modal-content\">      <div class=\"modal-header\">        <h3 class=\"modal-title\">Искать в KostySystem</h3>        <a href=\"#\" onclick=\"sfrreload()\" title=\"Закрыть поиск\" class=\"close\">×</a>      </div>      <div class=\"modal-body\">            <iframe src=\"/searchframe.html\" height=\"640\"  width=\"100%\"  frameBorder=\"0\" id=\"searchcontent\"></iframe><br><br><br><br></center></div>     </div>    </div>  </div></div>";
 function sfrreload() {
 $('#searchcontent')[0].contentWindow.location.reload(true);
-history.pushState(null, null, location.href.split('#')[0]);
 window.scrollTo(0, 0);
+  let delayres = await delay(2000);
+history.pushState(null, null, location.href.split('#')[0]);
 }
 
 
@@ -89,7 +92,6 @@ console.log("Hash: " + window.location.hash + "")
 console.log("URL: " + window.location.href + "")
 console.log(" ")
 }
-
 $(document).keydown(function(e) {
     if (e.keyCode == 27) {
 window.location.hash = "#";
