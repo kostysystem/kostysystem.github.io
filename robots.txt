@@ -1,5 +1,5 @@
 User-Agent: *
-Disallow: /goto/
+Disallow: /offline/
 Disallow: /special/
 Disallow: /images/
 Disallow: /siteinfo.html
