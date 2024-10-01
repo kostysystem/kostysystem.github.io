@@ -77,6 +77,17 @@ console.log("Hash: " + window.location.hash + "")
 console.log("URL: " + window.location.href + "")
 console.log(" ")
 }
+  if ('serviceWorker' in navigator) {
+    console.log('SERVWORKER: service worker registration in progress.');
+    navigator.serviceWorker.register('/service-worker.js').then(function () {
+      console.log('SERVWORKER: service worker registration complete.');
+    }, function () {
+      console.log('SERVWORKER: service worker registration failure.');
+    });
+  } else {
+    console.log('SERVWORKER: service worker is not supported.');
+  }
+
 $(document).keydown(function(e) {
     if (e.keyCode == 27) {
 sfrreload();
