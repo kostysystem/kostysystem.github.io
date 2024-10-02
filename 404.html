@@ -81,6 +81,16 @@ color: gray;
 </div>
 <script src="/elements.js"></script>
 <script src="/block.js" type="text/javascript"></script>
+<script>    
+var ur = window.location.pathname,
+    ext  = ur.split('.')[1];
+if (ext == "htm"){
+
+let file = window.location.pathname;
+
+window.location.pathname = file.substr(0, file.lastIndexOf(".")) + ".html";
+}
+</script>
 <script>
 var secret = 0;
 function pashalka() {
