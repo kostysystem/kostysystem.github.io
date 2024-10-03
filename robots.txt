@@ -1,6 +1,7 @@
 User-Agent: *
 Disallow: /offline/
 Disallow: /special/
+Disallow: /fordev/
 Disallow: /images/
 Disallow: /siteinfo.html
 Disallow: /styles.css
