@@ -5,15 +5,7 @@ var urll = window.location.href;
   if (window.parent.frames.length > 0) {
     document.body.innerHTML = "<br>";
   }
-  if (window.location.pathname = "/index.html") {
-window.location.pathname = "/";
-  }
-  if (window.location.pathname = "/index") {
-window.location.pathname = "/";
-  }
-  if (window.location.pathname = "/index.htm") {
-window.location.pathname = "/";
-  }
+
 // ============================================================================
 // Шапка и футер сайта.
 
