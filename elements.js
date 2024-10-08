@@ -5,6 +5,46 @@ var urll = window.location.href;
   if (window.parent.frames.length > 0) {
     document.body.innerHTML = "<br>";
   }
+
+let currentDate = new Date();
+var year = currentDate.getFullYear();
+console.log("Текущий год:");
+console.log(year);
+  if (year = "2020") {
+var podderzka = "ok";
+}
+  if (year = "2021") {
+var podderzka = "ok";
+}
+  if (year = "2022") {
+var podderzka = "ok";
+}
+  if (year = "2023") {
+var podderzka = "ok";
+}
+  if (year = "2024") {
+var podderzka = "ok";
+}
+  if (year = "2025") {
+var podderzka = "ok";
+}
+  if (year = "2026") {
+var podderzka = "ok";
+}
+  if (year = "2027") {
+var podderzka = "ok";
+}
+  if (year = "2028") {
+var podderzka = "ok";
+}
+  if (year = "2029") {
+var podderzka = "ok";
+} else {
+console.log("Сбой времени!")
+document.title = "KostySystem";
+   document.body.innerHTML = "<center><br><h1>Время на вашем устройстве выставлено неправильно!</h1><p>Не удалось открыть загрузить сайт KostySystem. Ваше время выставлено неправильно. Чтобы зайти на сайт, выставите правильное время на вашем устройстве!</p></center>";
+}
+
 // ============================================================================
 // Шапка и футер сайта.
 
