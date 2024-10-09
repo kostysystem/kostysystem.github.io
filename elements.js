@@ -71,6 +71,10 @@ window.scrollTo(0, 0);
 history.pushState(null, null, location.href.split('#')[0]);
 }
 
+function soon() {
+alert("Этот материал ещё не опубликован!");
+history.pushState(null, null, location.href.split('#')[0]);
+}
 
 function help() {
     console.log("Список доступных команд:")
