@@ -1,13 +1,9 @@
-@font-face {
-  font-family: "TNR";
-  src:
-    url("/timesnewroman.ttf") format("ttf"),
-}
+
 h1, h2, h3, h4, h5 {
 font-family: 'Arial';
 }
 p {
-font-family: 'TNR';
+font-family: 'Times New Roman';
 }
 .modal {
     position: fixed; /* фиксированное положение */
