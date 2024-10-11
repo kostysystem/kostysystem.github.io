@@ -3,21 +3,39 @@
 <head>
 <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Потерялась страничка - KostySystem</title>
+<title>404 - KostySystem</title>
   <link rel="icon" href="/favicon.ico">
 <div id="styles">
 <link rel="stylesheet" type="text/css" href="/styles.css" />
 </div>
 <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script>    
+var ur = window.location.pathname,
+    ext  = ur.split('.')[1];
+if (ext == "htm"){
+
+let file = window.location.pathname;
+
+window.location.pathname = file.substr(0, file.lastIndexOf(".")) + ".html";
+}
+document.title = ""+ ur +" - KostySystem"
+</script>
 <style>
 .nydetcya-kogda-nibyd {
-color: gray;
+text-align: right; 
+position: relative; 
+left: -23px;
+}
+
+.text404 {
+position: relative; top: -330px;
 }
 </style>
 <div id="imelivvidy">
 </div>
 </head>
 <body>
+<div id="nav404">
 <div id="menu">
 <div class="zakrep">
 <nav>  
@@ -52,28 +70,31 @@ color: gray;
 </div>
 </nav>
 </div>
-<center>
+</div>
+<div id="page404">
 <div id="vozmozno">
 </div>
 <br>
 <br>
+<p style="font-family: Serif; font-size: 16ex; color: rgba(0, 0, 0, 0.2); text-align: right; position: relative; left: -23px; top: -230px;">404</p>
+<!--
 <img src="/images/404image.png" width="70" height="70">
-<h1>KostySystem</h1>
-<h2>Страница потеряна :(</h2>
-<hr>
-<br>
-<h2>Эта страничка потерялась, увы.</h2>
-<h3>Это не значит, что стоит отчаиваться! У нас есть куча других страничек!</h3>
-<br>
-<p><b>Вы можете перейти на главную или найти другую страничку в поиске!</b></p>
-<br>
-<br>
-<h1><a href="/">Перейти на главную</a></h1>
-<h1><a href="#search">Найти другую страничку</a></h1>
-<br><br><br>
-<h4 class="nydetcya-kogda-nibyd"><a onclick="pashalka()" id="nydkognib" style="cursor: text; text-decoration: none;">А эта страничка, возможно, когда-нибудь и найдётся!</a></h4>
-<br><br>
+-->
+<center>
+<div class="text404">
+<h1>Пустовато здесь...</h1>
+<p style="font-size: 3ex;">Мы обыскали всё, что только возможно...<br>... но эту страницу мы так и не нашли ...</p>
+<p style="font-size: 3ex;">Это не значит что нужно отчаиваться!<br>Ведь не найдена только эта страница, а у нас на сайте много других найденных страниц!</p>
+<p style="font-size: 3ex;">Вы можете воспользоваться поиском по сайту, чтобы найти нужную вам страницу или перейти на главную!</p>
+<h1><a href="#search">Воспользоваться поиском!</a></h1>
+<h1><a href="/">На главную!</a></h1>
+</div>
 </center>
+<br>
+<br><br><br>
+<h4 class="nydetcya-kogda-nibyd"><a onclick="pashalka()" id="nydkognib" style="cursor: text; text-decoration: none; color: rgba(128, 128, 128, 0.5);">А эта страничка, возможно, когда-нибудь и найдётся!</a></h4>
+<br><br>
+</div>
 <div class="copyright" id="copyright">
 <center> <br><br> <h2>KostySystem</h2> <h5>© KostySystem</h5> <br> 
 <p>! JavaScript отключён. Некоторые элементы сайта могут отображаться неправильно.</p>
@@ -81,16 +102,6 @@ color: gray;
 </div>
 <script src="/elements.js"></script>
 <script src="/block.js" type="text/javascript"></script>
-<script>    
-var ur = window.location.pathname,
-    ext  = ur.split('.')[1];
-if (ext == "htm"){
-
-let file = window.location.pathname;
-
-window.location.pathname = file.substr(0, file.lastIndexOf(".")) + ".html";
-}
-</script>
 <script>
 var secret = 0;
 function pashalka() {
@@ -217,7 +228,7 @@ nydkognib.innerHTML = "С меня хватит.";
 }
     if (secret == 210){
 var nydkognib = document.getElementById("nydkognib");
-nydkognib.innerHTML = "Я ухожу!";
+nydkognib.innerHTML = "Закончили кликать.";
 }
     if (secret == 211){
 var nydkognib = document.getElementById("nydkognib");
@@ -597,5 +608,6 @@ var notfoundurl = window.location.pathname
         imelivvidy.innerHTML = "<style> #vozmozno { color: white; background-color: red; border: 2px solid gray; position: relative; top: -50px;} </style>";
 }
 </script>
+
 </body>
 </html>
