@@ -61,11 +61,11 @@ var type = "normal"
 
 
     if (window.location.pathname == "/siteinfo.html"){
-window.location.pathname = "/#aboutus";
+window.location.href = "https://kostysystem.github.io/#aboutus";
     }
 
     if (window.location.pathname == "/siteinfo"){
-window.location.pathname = "/#aboutus";
+window.location.href = "https://kostysystem.github.io/#aboutus";
     }
 
 
