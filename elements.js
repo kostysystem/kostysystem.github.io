@@ -64,6 +64,10 @@ var type = "normal"
 window.location.pathname = "/#aboutus";
     }
 
+    if (window.location.pathname == "/siteinfo"){
+window.location.pathname = "/#aboutus";
+    }
+
 
 // ==========================
 
