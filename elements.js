@@ -149,7 +149,7 @@ window.location.href = "https://kostysystem.github.io/#aboutus";
     }
 
 
-// ==========================
+
 
 
 // ==================================================================================
@@ -319,6 +319,90 @@ console.log("URL: " + window.location.href + "")
 console.log(" ")
 console.log("Введите help(), чтобы получить список команд.")
 
+
+
+let currentDate = new Date();
+var day = currentDate.getDate();
+var monthinfo = currentDate.getMonth();
+var month = monthinfo + 1;
+var year = currentDate.getFullYear();
+var sledyear = year + 1;
+
+   if (month == "10") {
+   if (day == "31") {
+document.querySelector('.topmenu').style.cssText = 'background-color: #cd5700;';
+document.querySelector('.menu').style.cssText = 'background-color: #cd5700;';
+document.querySelector('.menu-list').style.cssText = 'background-color: #cd5700;';
+document.querySelector('#copyright').style.cssText = 'background-color: #000;';
+var notewritenv = document.getElementById("notewriteerror");
+notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: black; color: white;\"><br><br><div class=\"notetext\">Бууу!!!</div><br><br></div>";
+}
+}
+   if (month == "11") {
+   if (day == "1") {
+document.querySelector('.topmenu').style.cssText = 'background-color: #cd5700;';
+document.querySelector('.menu').style.cssText = 'background-color: #cd5700;';
+document.querySelector('.menu-list').style.cssText = 'background-color: #cd5700;';
+document.querySelector('#copyright').style.cssText = 'background-color: #000;';
+var notewritenv = document.getElementById("notewriteerror");
+notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: black; color: white;\"><br><br><div class=\"notetext\">Бууу!!!</div><br><br></div>";
+}
+}
+   if (month == "12") {
+   if (day == "25" || day == "26" || day == "27" || day == "28" || day == "29" || day == "30" || day == "31") {
+document.querySelector('.topmenu').style.cssText = 'background-color: #42aaff;';
+document.querySelector('.menu').style.cssText = 'background-color: #42aaff;';
+document.querySelector('.menu-list').style.cssText = 'background-color: #42aaff;';
+document.querySelector('#copyright').style.cssText = 'background-color: #2a5c03;';
+$('.copyright').append('<div id="newyearel" style="position: relative;"></div>');
+var newyearel = document.getElementById("newyearel");
+newyearel.innerHTML = `
+<img src="/images/el.png" alt="Новогоднняя ёлка" style=\"  position: absolute; top: -210px;\">`;
+var notewritenv = document.getElementById("notewriteerror");
+notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: white; color: red;\"><br><br><div class=\"notetext\">С наступающим новым "+ sledyear +" годом!</div><br><br></div>";
+$('#styles').append('<div id="newyearstyles"></div>');
+var newyearstyles = document.getElementById("newyearstyles");
+newyearstyles.innerHTML = `
+<style>
+@media screen and (max-width: 470px) {
+#newyearel {
+display: none;
+}
+}
+</style>`;
+
+
+}
+}
+
+
+
+   if (month == "1") {
+   if (day == "1" || day == "2" || day == "3" || day == "4" || day == "5" || day == "6" || day == "7" || day == "8" || day == "9" || day == "10") {
+document.querySelector('.topmenu').style.cssText = 'background-color: #42aaff;';
+document.querySelector('.menu').style.cssText = 'background-color: #42aaff;';
+document.querySelector('.menu-list').style.cssText = 'background-color: #42aaff;';
+document.querySelector('#copyright').style.cssText = 'background-color: #2a5c03;';
+$('.copyright').append('<div id="newyearel" style="position: relative;"></div>');
+var newyearel = document.getElementById("newyearel");
+newyearel.innerHTML = `
+<img src="/images/el.png" alt="Новогоднняя ёлка" style=\"  position: absolute; top: -210px;\">`;
+var notewritenv = document.getElementById("notewriteerror");
+notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: white; color: red;\"><br><br><div class=\"notetext\">С новым "+ year +" годом!!!</div><br><br></div>";
+$('#styles').append('<div id="newyearstyles"></div>');
+var newyearstyles = document.getElementById("newyearstyles");
+newyearstyles.innerHTML = `
+<style>
+@media screen and (max-width: 470px) {
+#newyearel {
+display: none;
+}
+}
+</style>`;
+
+
+}
+}
 
 
 // ==================================================================================
