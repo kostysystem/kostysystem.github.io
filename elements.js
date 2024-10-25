@@ -265,12 +265,12 @@ var url = window.location.pathname
 
     if (note == "true"){
     if (type == "error"){
-var copyright = document.getElementById("notewriteerror");
-copyright.innerHTML = "<div id=\"noteerr\"><br><br><div class=\"notetext\">" + notetext +" </div><br><br></div>";
+var notewrite = document.getElementById("notewriteerror");
+notewrite.innerHTML = "<div id=\"noteerr\"><br><br><div class=\"notetext\">" + notetext +" </div><br><br></div>";
     }
     if (type == "normal"){
-var copyright = document.getElementById("notewrite");
-copyright.innerHTML = "<div id=\"note\"><br><br><div class=\"notetext\">" + notetext +" </div><br><br></div>";
+var notewrite = document.getElementById("notewrite");
+notewrite.innerHTML = "<div id=\"note\"><br><br><div class=\"notetext\">" + notetext +" </div><br><br></div>";
     }
     else {
 
