@@ -74,7 +74,7 @@
 <br><br>
 <h2>Последние публикации</h2>
 <p>Боитесь упустить важный контент? Ознакомьтесь с нашим расписанием <a href="/schedule.html">тут</a>!</p>
-<p id="lastpubcont" style="text-altgn: right;"><a href="#lastpubupd" onclick="reloadnewpub()">Обновить публикации</a></p>
+<p id="lastpubupd"><a href="#lastpubupd" onclick="reloadnewpub()">Обновить публикации</a></p>
 <div id="last-pub" class="last-pub">
 <br><br>
 <br>
@@ -82,7 +82,7 @@
 <hr>
 <br>
 <h4>Для новичков</h4>
-<p>11.11.2024, 21:01</p>
+<p>11.11.2024, 21:00</p>
 <h2><a href="/newbie/16.html">Как сделать поиск яндекса в Firefox по умолчанию</a></h2>
 <br>
 <hr>
@@ -143,13 +143,11 @@
 <script src="/block.js" type="text/javascript"></script>
 <script>
 function reloadnewpub() {
-$( ".last-pub" ).load(window.location.href + " .last-pub" );
-document.getElementById("lastpubcont").innerHTML = "<a style=\"color: #228b22;\">Публикации обновлены!</a>";
-setTimeout(reloadnewpubobr, 2500);
+window.location.reload();
 }
-function reloadnewpubobr() {
-document.getElementById("lastpubcont").innerHTML = "<a href=\"#lastpubupd\" onclick=\"reloadnewpub()\">Обновить публикации</a>";
-}
+ if (window.location.hash == "#lastpubupd"){
+history.pushState(null, null, location.href.split('#')[0]);
+ }
 </script>
 </body>
 </html>
