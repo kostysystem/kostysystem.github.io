@@ -157,7 +157,7 @@ window.location.href = "https://kostysystem.github.io/#aboutus";
 
 $('body').append('<div id="searchwindow"></div>');
 var searchwindow = document.getElementById("searchwindow");
-    if (window.location.pathname == "/newbie/" || window.location.pathname == "/articles/" || window.location.pathname == "/blog/"){
+    if (window.location.pathname == "/newbie/" || window.location.pathname == "/newbie/index.html" || window.location.pathname == "/newbie/index" || window.location.pathname == "/articles/" || window.location.pathname == "/articles/index" || window.location.pathname == "/articles/index.html" || window.location.pathname == "/blog/" || window.location.pathname == "/blog/index" || window.location.pathname == "/blog/index.html"){
 searchwindow.innerHTML = "<div id=\"search\" class=\"modal\">  <div class=\"modal-dialog\">    <div class=\"modal-content\">      <div class=\"modal-header\">        <h3 class=\"modal-title\">Искать в KostySystem</h3>        <a onclick=\"sfrrelserv()\" title=\"Закрыть поиск\" class=\"close\">×</a>      </div>      <div class=\"modal-body\">            <iframe src=\"/searchframe.html\" height=\"640\"  width=\"100%\"  frameBorder=\"0\" id=\"searchcontent\"></iframe><br><br><br><br></center></div>     </div>    </div>  </div></div>";
     } else {
 searchwindow.innerHTML = "<div id=\"search\" class=\"modal\">  <div class=\"modal-dialog\">    <div class=\"modal-content\">      <div class=\"modal-header\">        <h3 class=\"modal-title\">Искать в KostySystem</h3>        <a onclick=\"sfrreload()\" title=\"Закрыть поиск\" class=\"close\">×</a>      </div>      <div class=\"modal-body\">            <iframe src=\"/searchframe.html\" height=\"640\"  width=\"100%\"  frameBorder=\"0\" id=\"searchcontent\"></iframe><br><br><br><br></center></div>     </div>    </div>  </div></div>";
@@ -225,11 +225,19 @@ console.log(" ")
 
 $(document).keydown(function(e) {
     if (e.keyCode == 27) {
+if (window.location.pathname == "/newbie/" || window.location.pathname == "/newbie/index.html" || window.location.pathname == "/newbie/index" || window.location.pathname == "/articles/" || window.location.pathname == "/articles/index" || window.location.pathname == "/articles/index.html" || window.location.pathname == "/blog/" || window.location.pathname == "/blog/index" || window.location.pathname == "/blog/index.html"){
+sfrrelserv()
+} else {
 sfrreload();
+}
     }
 });
 function sexit() {
+if (window.location.pathname == "/newbie/" || window.location.pathname == "/newbie/index.html" || window.location.pathname == "/newbie/index" || window.location.pathname == "/articles/" || window.location.pathname == "/articles/index" || window.location.pathname == "/articles/index.html" || window.location.pathname == "/blog/" || window.location.pathname == "/blog/index" || window.location.pathname == "/blog/index.html"){
+sfrrelserv()
+} else {
 sfrreload();
+}
 }
 let isDark = false;
 
