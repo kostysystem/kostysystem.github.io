@@ -109,7 +109,7 @@ menu.innerHTML = `
 
 <h2><span class=\"search-button\"><a href=\"#search\" class=\"search-link\" title=\"Поиск по сайту\"><img src=\"/images/website-search.png\" width=\"32\" height=\"32\"></a></span></h2>
 
-<h2><span class=\"theme-pereklychatel\" id=\"switchtheme\"><a onclick=\"switchTheme()\" href=\"#switch\" style=\"text-decoration: none;\"><img src=\"/images/website-blacktheme.png\" width=\"32\" height=\"32\" title=\"Переключить тему\"></a></span></h2><br><br>`;
+<h2><span class=\"theme-pereklychatel\" id=\"switchtheme\"><a onclick=\"switchTheme()\" style=\"text-decoration: none; cursor: pointer;\"><img src=\"/images/website-blacktheme.png\" width=\"32\" height=\"32\" title=\"Переключить тему\"></a></span></h2><br><br>`;
 // ====================
 
 
@@ -251,7 +251,7 @@ async function switchTheme() {
         var theme = document.getElementById("styles");
         theme.innerHTML = "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles.css\" />";
         var themeswicon = document.getElementById("switchtheme");
-        themeswicon.innerHTML = "<a onclick=\"switchTheme()\" href=\"#switch\" style=\"text-decoration: none;\"><img src=\"/images/website-blacktheme.png\" width=\"32\" height=\"32\" title=\"Переключить тему\"></a>";
+        themeswicon.innerHTML = "<a onclick=\"switchTheme()\" style=\"text-decoration: none; cursor: pointer;\"><img src=\"/images/website-blacktheme.png\" width=\"32\" height=\"32\" title=\"Переключить тему\"></a>";
         var theme = "white";
         localStorage.setItem("mode", theme);
         isDark = false;
@@ -259,7 +259,7 @@ async function switchTheme() {
         var theme = document.getElementById("styles");
         theme.innerHTML = "<link rel=\"stylesheet\" type=\"text/css\" href=\"/stylesdark.css\" />";
         var themeswicon = document.getElementById("switchtheme");
-        themeswicon.innerHTML = "<a onclick=\"switchTheme()\" href=\"#switch\" style=\"text-decoration: none;\"><img src=\"/images/website-whitetheme.png\" width=\"32\" height=\"32\" title=\"Переключить тему\"></a>";
+        themeswicon.innerHTML = "<a onclick=\"switchTheme()\" style=\"text-decoration: none; cursor: pointer;\"><img src=\"/images/website-whitetheme.png\" width=\"32\" height=\"32\" title=\"Переключить тему\"></a>";
         var theme = "dark";
         localStorage.setItem("mode", theme);
         isDark = true;
