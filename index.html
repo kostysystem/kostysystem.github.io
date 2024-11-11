@@ -74,7 +74,7 @@
 <br><br>
 <h2>Последние публикации</h2>
 <p>Боитесь упустить важный контент? Ознакомьтесь с нашим расписанием <a href="/schedule.html">тут</a>!</p>
-<p id="lastpubcont" style="text-altgn: right;"><a href="#lastpub-cont" onclick="reloadnewpub()">Обновить публикации</a></p>
+<p id="lastpubcont" style="text-altgn: right;"><a href="#lastpubupd" onclick="reloadnewpub()">Обновить публикации</a></p>
 <div id="last-pub" class="last-pub">
 <br><br>
 <br>
@@ -148,7 +148,7 @@ document.getElementById("lastpubcont").innerHTML = "<a style=\"color: #228b22;\"
 setTimeout(reloadnewpubobr, 2500);
 }
 function reloadnewpubobr() {
-document.getElementById("lastpubcont").innerHTML = "<a href=\"#lastpub-cont\" onclick=\"reloadnewpub()\">Обновить публикации</a>";
+document.getElementById("lastpubcont").innerHTML = "<a href=\"#lastpubupd\" onclick=\"reloadnewpub()\">Обновить публикации</a>";
 }
 </script>
 </body>
