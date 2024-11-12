@@ -141,6 +141,14 @@ var type = "normal"
 window.location.href = "https://kostysystem.github.io/#aboutus";
     }
 
+if (window.location.pathname == "/search"){
+window.location.href = "https://kostysystem.github.io/#search";
+}
+
+if (window.location.pathname == "/search.html"){
+window.location.href = "https://kostysystem.github.io/#search";
+}
+
     if (window.location.pathname == "/siteinfo"){
 window.location.href = "https://kostysystem.github.io/#aboutus";
     }
