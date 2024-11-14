@@ -61,7 +61,7 @@ copyright.innerHTML = `
 <p><a href=\"#search\" class=\"bottom-element\">Поиск по сайту</a></p> 
 <p><a href=\"/newbie/index.html\" class=\"bottom-element\">Для новичков</a></p> 
 <p><a href=\"/articles/index.html\" class=\"bottom-element\">Статьи</a> </p> <p> <a href=\"/blog/index.html\" class=\"bottom-element\">Блог</a></center></p><br><br> 
-
+<center><h3><a href="/special/settings.html" style="color: white;">Настроить сайт...</a></h3></center>
 <div class=\"avtor-pravo\"><h5>© KostySystem, 2024</h5></div> <br>`;
 
 
