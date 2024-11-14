@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Настройки сайта - KostySystem</title>
+  <link rel="icon" href="favicon.ico">
+<div id="styles">
+<link rel="stylesheet" type="text/css" href="/styles.css" />
+</div>
+<style>
+#exit {
+color: red;
+text-align: right;
+font-family: Arial;
+}
+</style>
+</head>
+<body>
+<div id="exit">
+<h2><a href="/" style="text-decoration: none; color: red;">⬅ На главную сайта</a> </h2>
+</div>
+<div id="menu" style="display:none;">
+<div class="zakrep">
+<nav>  
+   <ul class="topmenu">
+    <li> <h2> KostySystem</h2></li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li><a href="../index.html">Главная</a></li>
+    <li><a href="../newbie/index.html">Для новичков</a></li>
+    <li><a href="../articles/index.html">KostySystem - статьи</a></li>
+    <li><a href="../blog/index.html">Блог</a></li>
+  </ul>
+        <div class="menu">
+<br>
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
+    <ul class="menu-list">
+<br><br>
+<center>
+            <li><h3>KostySystem</h3></li>
+</center>
+            <li><a class="menu-item" href="../index.html">Главная</a></li>
+            <li><a class="menu-item" href="../newbie/index.html">Для новичков</a></li>
+            <li><a class="menu-item" href="../articles/index.html">KostySystem - статьи</a></li>
+            <li><a class="menu-item" href="../blog/index.html">Блог</a></li>
+       </ul>
+<br>
+</div>
+</div>
+</nav>
+</div>
+<div id="page">
+<center>
+<h1>Настроить сайт (BETA)</h1>
+<br><hr><br>
+<h4>Тема сайта</h4>
+<p>Выберите тему для сайта, которая вам нравится.</p>
+<h3 id="kakayatema"></h3>
+<br><br><br><br><br>
+
+<br><hr><br>
+<h4>Очистить данные</h4>
+<p>Эта функция восстановит настройки сайта по умолчанию.</p>
+<h3><a href="#cleardata">Сбросить настройки сайта</a>
+</center>
+</div>
+
+<div class="copyright" id="copyright" style="display:none;">
+<center> <br><br> <h2>KostySystem</h2> <h5>© KostySystem</h5> <br> 
+<p>! JavaScript отключён. Некоторые элементы сайта могут отображаться неправильно.</p>
+</center>
+</div>
+<div id="cleardata" class="modal">  <div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <h3 class="modal-title">Подтверждение</h3>        <a href="#" title="Закрыть" class="close">×</a>      </div>      <div class="modal-body">            <center><p><h2 style="color: black;">Вы уверены что хотите сбросить настройки сайта<br><br><a href="#" style="color: green;">НЕТ</a><br><br><a href="#cleardataend" style="color: red;" onclick="deletealldata()">ДА</a></h2></p></center><br><br><br><br></center></div>     </div>    </div>  </div></div>
+<div id="cleardataend" class="modal">  <div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <h3 class="modal-title">Настройки сброшены!</h3>              </div>      <div class="modal-body">            <center><p><h2 style="color: black;">Настройки сайта были сброшены!<br><br><a href="/" style="color: black;">ПЕРЕЙТИ НА ГЛАВНУЮ САЙТА</a><br><br><a href="#" style="color: black;" onclick="window.location.href = '/special/settings.html'">ПЕРЕЙТИ К НАСТРОЙКАМ САЙТА</a></h2></p></center><br><br><br><br></center></div>     </div>    </div>  </div></div>
+
+
+<script src="/elements.js"></script>
+<script>
+function deletealldata() {
+        var theme = "white";
+        localStorage.setItem("mode", theme);
+        isDark = false
+}
+function refreshthemes() {
+if (isDark) {
+var kakayatema = document.getElementById("kakayatema");
+kakayatema.innerHTML = "<b>Тёмная (Выбрано)</b><br><br><a onclick=\"refreshthemeandswitch()\" style=\"cursor:pointer;\">Светлая</a>";
+} else {
+var kakayatema = document.getElementById("kakayatema");
+kakayatema.innerHTML = "<a onclick=\"refreshthemeandswitch()\" style=\"cursor:pointer;\">Тёмная</a><br><br>  <b>Светлая (Выбрано)</b>";
+}
+}
+function refreshthemeandswitch() {
+switchTheme();
+refreshthemes();
+}
+</script>
+<script>
+ refreshthemes()
+</script>
+</body>
+</html>
