@@ -215,6 +215,13 @@ function blog() {
 function status() {
 console.log(" ")
 console.log("Статус текущей веб-страницы:")
+ console.log("Host: " + window.location.host + "")
+console.log("Path: " + window.location.pathname + "")
+console.log("Protocol: " + window.location.protocol + "")
+console.log("Hash: " + window.location.hash + "")
+console.log("URL: " + window.location.href + "")
+console.log(" ")
+}
 function infodate(infoday, infomonth) {
 
 if (infomonth == "04") {
@@ -240,13 +247,7 @@ posxalkat.innerHTML = `
 }
 }
 }
-console.log("Host: " + window.location.host + "")
-console.log("Path: " + window.location.pathname + "")
-console.log("Protocol: " + window.location.protocol + "")
-console.log("Hash: " + window.location.hash + "")
-console.log("URL: " + window.location.href + "")
-console.log(" ")
-}
+
   if ('serviceWorker' in navigator) {
     console.log('SERVWORKER: service worker registration in progress.');
     navigator.serviceWorker.register('/service-worker.js').then(function () {
