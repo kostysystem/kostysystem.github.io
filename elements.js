@@ -235,6 +235,7 @@ posxalka.innerHTML = `
 
 }
 }
+}
 console.log("Host: " + window.location.host + "")
 console.log("Path: " + window.location.pathname + "")
 console.log("Protocol: " + window.location.protocol + "")
