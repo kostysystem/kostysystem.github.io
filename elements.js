@@ -241,7 +241,7 @@ posxalka.innerHTML = `
 `
 var posxalkat = document.getElementById("sitelogopc");
 posxalkat.innerHTML = `
-<img src=\"/favicon.ico\" width=\"40px\" height=\"40px\" align=\"center\"> 07.12.2023 🕯️
+<img src=\"/images/ripcat.easter.egg.jpeg\" width=\"40px\" height=\"40px\" align=\"center\"> 07.12.2023 🕯️
 `
 
 }
