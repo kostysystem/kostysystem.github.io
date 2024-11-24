@@ -93,7 +93,7 @@ menu.innerHTML = `
 <label for=\"burger-checkbox\" class=\"burger\"></label>   <ul class=\"menu-list\">
 <br><br>
 <center> 
-<br><br>
+<br><br><br>
 <li><a class=\"menu-item\" href=\"/\">Главная</a></li>            
 <li><a class=\"menu-item\" href=\"/newbie/index.html\">Для новичков</a></li>            
 <li><a class=\"menu-item\" href=\"/articles/index.html\">KostySystem - статьи</a></li>            
