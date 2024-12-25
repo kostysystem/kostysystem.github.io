@@ -408,7 +408,7 @@ var newyearel = document.getElementById("newyearel");
 newyearel.innerHTML = `
 <img src="/images/el.png" alt="Новогоднняя ёлка" style=\"  position: absolute; top: -210px;\">`;
 var notewritenv = document.getElementById("notewriteerror");
-notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: white;\"><br><br><div class=\"notetext\"><a href=\"/special/event/newyear/\" style=\"color: red;\">С наступающим новым "+ sledyear +" годом!</a></div><br><br></div>";
+notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: white;\"><br><br><div class=\"notetext\"><a href=\"#\" style=\"color: red;\">С наступающим новым "+ sledyear +" годом!</a></div><br><br></div>";
 $('#styles').append('<div id="newyearstyles"></div>');
 var newyearstyles = document.getElementById("newyearstyles");
 newyearstyles.innerHTML = `
@@ -437,7 +437,7 @@ var newyearel = document.getElementById("newyearel");
 newyearel.innerHTML = `
 <img src="/images/el.png" alt="Новогоднняя ёлка" style=\"  position: absolute; top: -210px;\">`;
 var notewritenv = document.getElementById("notewriteerror");
-notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: white;\"><br><br><div class=\"notetext\"><a href=\"/special/event/newyear/\" style=\"color: red;\">С новым "+ sledyear +" годом!</a></div><br><br></div>";
+notewritenv.innerHTML = "<div id=\"noteerr\" style=\"background-color: white;\"><br><br><div class=\"notetext\"><a href=\"#\" style=\"color: red;\">С новым "+ sledyear +" годом!</a></div><br><br></div>";
 $('#styles').append('<div id="newyearstyles"></div>');
 var newyearstyles = document.getElementById("newyearstyles");
 newyearstyles.innerHTML = `
